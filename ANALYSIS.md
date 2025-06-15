@@ -26,7 +26,7 @@
 | 6 | Μη Ελεγχόμενη Έκφραση Διαδρομής (XXE Module) | CWE-73 | A03:2021 | BlindSendFileAssignment.java | Υψηλό |
 
 ### Στιγμιότυπο: Πίνακας Ελέγχου CodeQL
-[Πίνακας ελέγχου CodeQL που εμφανίζει όλες τις ευπάθειες](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/codeql.jpeg)
+![Πίνακας ελέγχου CodeQL που εμφανίζει όλες τις ευπάθειες](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/codeql.jpeg)
 
 ## Λεπτομερής Ανάλυση Ευπαθειών
 
@@ -80,7 +80,7 @@ public Document parseXML(String xmlInput) {
 ```
 
 **Στιγμιότυπο: Λεπτομέρειες Ευπάθειας XXE**
-[Ροή κώδικα ευπάθειας XXE](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/1.jpeg)
+![Ροή κώδικα ευπάθειας XXE](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/1.jpeg)
 
 ---
 
@@ -106,7 +106,7 @@ public String fetchURL(String userProvidedURL) {
 - Σάρωση εσωτερικού δικτύου: `http://192.168.1.1:22`
 
 **Στιγμιότυπο: Ροή Επίθεσης SSRF**
-[Θέση για στιγμιότυπο: Επίδειξη ευπάθειας SSRF](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/ssrf.jpeg)
+![Θέση για στιγμιότυπο: Επίδειξη ευπάθειας SSRF](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/ssrf.jpeg)
 
 ---
 
@@ -345,9 +345,6 @@ queries:
    - Χειροκίνητη επισκόπηση κώδικα
    - Εκτέλεση δοκιμών διείσδυσης
    - Επικύρωση ελέγχων ασφαλείας
-
-### Στιγμιότυπο: Αποτελέσματα Ελέγχων
-[Θέση για στιγμιότυπο: Σύγκριση πριν και μετά την αποκατάσταση]
 
 ## Παράρτημα
 
