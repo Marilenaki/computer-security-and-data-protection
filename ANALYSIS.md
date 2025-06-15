@@ -26,7 +26,7 @@
 | 6 | Μη Ελεγχόμενη Έκφραση Διαδρομής (XXE Module) | CWE-73 | A03:2021 | BlindSendFileAssignment.java | Υψηλό |
 
 ### Στιγμιότυπο: Πίνακας Ελέγχου CodeQL
-[Θέση για στιγμιότυπο: Πίνακας ελέγχου CodeQL που εμφανίζει όλες τις ευπάθειες](https://github.com/Marilenaki/)
+[Πίνακας ελέγχου CodeQL που εμφανίζει όλες τις ευπάθειες](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/codeql.jpeg))
 
 ## Λεπτομερής Ανάλυση Ευπαθειών
 
@@ -48,9 +48,6 @@ public Object deserializeUserInput(byte[] serializedData) {
 
 **Σενάριο Επίθεσης:**
 Ένας επιτιθέμενος μπορεί να δημιουργήσει ένα σειριοποιημένο αντικείμενο που περιέχει κακόβουλα φορτία χρησιμοποιώντας αλυσίδες gadget από βιβλιοθήκες που υπάρχουν στο classpath (π.χ., Apache Commons Collections). Όταν αποσειριοποιηθούν, αυτά τα αντικείμενα μπορούν να εκτελέσουν εντολές συστήματος, να διαβάσουν ευαίσθητα αρχεία ή να δημιουργήσουν reverse shells.
-
-**Στιγμιότυπο: Ειδοποίηση Μη Ασφαλούς Αποσειριοποίησης**
-[Θέση για στιγμιότυπο: Ειδοποίηση CodeQL για ευπάθεια αποσειριοποίησης]
 
 ---
 
@@ -83,7 +80,7 @@ public Document parseXML(String xmlInput) {
 ```
 
 **Στιγμιότυπο: Λεπτομέρειες Ευπάθειας XXE**
-[Θέση για στιγμιότυπο: Ροή κώδικα ευπάθειας XXE]
+[Ροή κώδικα ευπάθειας XXE](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/1.jpeg)
 
 ---
 
@@ -109,7 +106,7 @@ public String fetchURL(String userProvidedURL) {
 - Σάρωση εσωτερικού δικτύου: `http://192.168.1.1:22`
 
 **Στιγμιότυπο: Ροή Επίθεσης SSRF**
-[Θέση για στιγμιότυπο: Επίδειξη ευπάθειας SSRF]
+[Θέση για στιγμιότυπο: Επίδειξη ευπάθειας SSRF](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/ssrf.jpeg)
 
 ---
 
@@ -138,9 +135,6 @@ public void extractZip(File zipFile, File destDir) {
 - Τοποθέτηση κακόβουλων scripts σε καταλόγους web
 - Τροποποίηση αρχείων ρυθμίσεων εφαρμογής
 
-**Στιγμιότυπο: Εκμετάλλευση Zip Slip**
-[Θέση για στιγμιότυπο: Παράδειγμα path traversal Zip Slip]
-
 ---
 
 ### 5. Μη Ελεγχόμενη Έκφραση Διαδρομής - FileServer
@@ -163,9 +157,6 @@ public File getRequestedFile(String filename) {
 - URL κωδικοποίηση: `%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd`
 - Διπλή κωδικοποίηση: `%252e%252e%252f`
 
-**Στιγμιότυπο: Path Traversal στο FileServer**
-[Θέση για στιγμιότυπο: Λεπτομέρειες ευπάθειας FileServer]
-
 ---
 
 ### 6. Μη Ελεγχόμενη Έκφραση Διαδρομής - XXE Module
@@ -183,9 +174,6 @@ public String readFileContent(String filepath) {
     return Files.readString(file.toPath());
 }
 ```
-
-**Στιγμιότυπο: Path Traversal XXE Module**
-[Θέση για στιγμιότυπο: Ευπάθεια BlindSendFileAssignment]
 
 ## Αξιολόγηση Τεχνικών Επιπτώσεων
 
