@@ -26,7 +26,7 @@
 | 6 | Μη Ελεγχόμενη Έκφραση Διαδρομής (XXE Module) | CWE-73 | A03:2021 | BlindSendFileAssignment.java | Υψηλό |
 
 ### Στιγμιότυπο: Πίνακας Ελέγχου CodeQL
-[Πίνακας ελέγχου CodeQL που εμφανίζει όλες τις ευπάθειες](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/codeql.jpeg))
+[Πίνακας ελέγχου CodeQL που εμφανίζει όλες τις ευπάθειες](https://github.com/Marilenaki/computer-security-and-data-protection/blob/main/docs/codeql.jpeg)
 
 ## Λεπτομερής Ανάλυση Ευπαθειών
 
